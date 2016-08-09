@@ -1,5 +1,7 @@
 package net.atos
 
+import net.atos.shop.Shop
+
 object Main {
 
   //Main to provide user interaction
