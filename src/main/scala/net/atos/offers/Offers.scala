@@ -2,6 +2,9 @@ package net.atos.offers
 
 import net.atos.items.Items.{Orange, Apple, Item}
 
+//Simple solution that will only work for offers that don't clash. Some sort of offer precedence would need to be
+//implemented to allow clashing offers. Right now it would just run through the list of active offers from first to last,
+//possibly removing the chance of a better offer further down the list.
 object Offers {
 
   type RunningTotal = (Int, List[Item])
